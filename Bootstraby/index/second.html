@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <title>Winners club</title>
+    <link rel="icon" href="img/fitness.icon">
+  </head>
+  <body>
+      
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-black" href="#"><span class="text-primary">W</span>inners <span class="text-primary">A</span>cademy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-primary active" aria-current="page" href="../index.html">Subjects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="second.html">Star Points</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="third.html">Qusetions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Start Home section -->
+    <section class="text-dark pt-1" id="Home">
+        <div class="container">
+          <div class="d-sm-flex align-items-center my-5 py-5 py-lg-0">
+              <div>
+                  <h1 class="text-primary text-sm-center">Motivations</h1>
+                  <p class="lead text-sm-center">The secret of success is to do the common things uncommonly well. 
+                    Good things come to people who wait, but better things come to those who go out and get them
+                  </p>
+                  <!-- Button trigger modal -->
+                  <button class="btn btn-primary text-light" data-bs-toggle="modal" 
+                  data-bs-target="#getStarted">
+                    Click me
+                  </button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="getStarted" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Start now</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p class="lead"> Hello, Start your courses and finish all the requiremnts now.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                          <button class="btn btn-primary text-light">Understood</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <img src="img/motivationpic.jpg" style="width: 60%;" class="rounded-circle  d-none d-sm-block mx-5" alt="">
+          </div>
+        </div>
+    </section>
+    <!-- End Home section -->
+
+      <!-- Start sign up section  -->
+      <!-- <section class="bg-danger text-light py-5">
+          <div class="container">
+              <div class="d-flex align-items-center flex-column">
+                <h2 class=" pb-2 text-light">search for your subject</h2>
+                <div class="input-group w-lg-50">
+                    <input type="text" class="form-control" placeholder="Subject code">
+                    <button class="btn btn-outline-warning" type="button" >Search</button>
+                  </div>
+              </div>
+          </div>
+      </section> -->
+      <!-- End sign up section  -->
+
+      <div class="container bg-light p-5 rounded-3 ">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip01" class="form-label text-dark">First name</label>
+              <input type="text" class="form-control" id="validationTooltip01" value="Murad" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip02" class="form-label text-dark">Last name</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="Al-alwani" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltipUsername" class="form-label text-dark">Matric no.</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="validationTooltipUsernamePrepend">172xxxx</span>
+                <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                <div class="invalid-tooltip">
+                  Please choose a unique and valid username.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 position-relative">
+              <label for="validationTooltip03" class="form-label text-dark">Comments</label>
+              <input type="text" class="form-control" id="validationTooltip03" required>
+              <div class="invalid-tooltip">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip04" class="form-label text-dark">Star type</label>
+              <select class="form-select" id="validationTooltip04" required>
+                <option selected disabled value="">Choose...</option>
+                <option> high class </option>
+                <option> standerd </option>
+                <option> low class </option>
+              </select>
+              <div class="invalid-tooltip">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip05" class="form-label text-dark">Date</label>
+              <input type="text" class="form-control" id="validationTooltip05" required>
+              <div class="invalid-tooltip">
+                Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
+      </div>
+
+      
+
+      <!-- Start  Accordin-->
+      <section>
+          <div class="containre p-5">
+            <div class="accordion ccordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        High class star point
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body px-1 border-info">
+                        <strong class="fw-bold">1:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa harum fugit, cumque perferendis sed cupiditate debitis dolores dolorum dolor ores nihil laboriosam. Tenetur, officia voluptates.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                       Standerd class star point
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong class="fw-bold">2:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa harum fugit, cumque perferendis sed cupiditate debitis dolores dolorum dolor ores nihil laboriosam. Tenetur, officia voluptates.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Low class star point
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong class="fw-bold">3:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa harum fugit, cumque perferendis sed cupiditate debitis dolores dolorum dolor ores nihil laboriosam. Tenetur, officia voluptates.
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+      <!-- End  Accordin section-->
+
+
+      <!-- Start review section-->
+      <section class="bg-light" id="Reviews">
+        <div class="container py-2">
+            <div class="text-center py-3">
+              <h2 class="text-primary">Reviews</h2>
+              <p class="text-dark">Take a look on reviews</p>
+            </div>
+          <div class="row py-3">
+              <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                  <a class="dan list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Studing</a>
+                  <a class="dan list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Improve</a>
+                  <a class="dan list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Help others</a>
+                  <a class="dan list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Have fun</a>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"> 
+                      <div>
+                          <i class="bi bi-star-fill text-light"></i>
+                          <i class="bi bi-star-fill text-light"></i>
+                          <i class="bi bi-star-fill text-light"></i>
+                          <i class="bi bi-star-fill text-light"></i>
+                      </div>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, eaque!
+                  </div>
+                  <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                      <div>
+                          <i class="bi bi-star-fill text-light"></i>
+                          <i class="bi bi-star-fill text-light"></i>
+                          <i class="bi bi-star-fill text-light"></i>
+                          <i class="bi bi-star-fill text-light"></i>
+                          <i class="bi bi-star-fill text-light"></i>
+                      </div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptate minus laborum vel, qui facere.
+                  </div>
+                  <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                      <div>
+                          <i class="bi bi-star-fill text-light"></i>
+                          <i class="bi bi-star-fill text-light"></i>
+                          <i class="bi bi-star-fill text-light"></i>
+                          <i class="bi bi-star-half text-light"></i>
+                      </div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iusto magnam nihil maxime laborum? 
+                      Eum aliquid dolor labore iusto autem!
+                  </div>
+                  <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                      <div>
+                          <i class="bi bi-star-fill text-light"></i>
+                          <i class="bi bi-star-fill text-light"></i>
+                          <i class="bi bi-star-fill text-light"></i>
+                          <i class="bi bi-star-fill text-light"></i>
+                          <i class="bi bi-star-half text-light"></i>
+                      </div>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, et! Iste eum eius nulla veritatis 
+                      suscipit dolore a eveniet quam at consequuntur, id distinctio accusantium?
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- End reviews section-->
+
+    <!-- Start footer seaction -->
+    <section class="bg-dark py-2">
+      <div class="container">
+        <div class="py-4">
+          <h3 class="text-center text-primary">Stay active and keep studing</h3>
+          <p class="text-center lead text-light">Push yourself, because no one else is going to do it for you.</p>
+        </div>
+          <div class="d-flex justify-content-evenly">
+            <div class="spinner-grow text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <i class="bi bi-instagram text-danger fs-4"></i>
+            <i class="bi bi-whatsapp text-success fs-4"></i>
+            <i class="bi bi-youtube text-danger fs-4"></i>
+            <i class="bi bi-twitter text-primary fs-4"></i>
+            <div class="spinner-grow text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+      </div>
+    </section>
+      <!-- End footer seaction -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+</html>
